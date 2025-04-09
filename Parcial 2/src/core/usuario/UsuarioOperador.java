@@ -15,7 +15,8 @@ import core.registro.RegistroOperador;
 public class UsuarioOperador extends Usuario {
     private RegistroOperador historial;
     
-    public UsuarioOperador(){
-        
+    public UsuarioOperador(String celular, boolean covid){
+        super( celular,  covid);
+        this.historial = historial; 
     }
 }

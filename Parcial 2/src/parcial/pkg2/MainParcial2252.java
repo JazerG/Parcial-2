@@ -1,7 +1,8 @@
 package parcial.pkg2;
 import core.Puntointeres.Antena;
 import core.Puntointeres.CovidTrack;
-import core.Puntointeres.UsuarioOperador;
+import core.usuario.UsuarioAplicacion;
+import core.usuario.UsuarioOperador;
 import java.time.LocalDateTime;
 
 public class MainParcial2252 {

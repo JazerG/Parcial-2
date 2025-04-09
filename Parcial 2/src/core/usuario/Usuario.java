@@ -10,11 +10,14 @@ package core.usuario;
  */
 public class Usuario {
     
-    private String cedula; 
+    private String celular; 
     private boolean covid;
-    
-    public Usuario(){
-        
+
+    public Usuario(String celular, boolean covid) {
+        this.celular = celular;
+        this.covid = covid;
     }
+    
+    
     
 }

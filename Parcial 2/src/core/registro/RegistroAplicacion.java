@@ -10,14 +10,20 @@ package core.registro;
  */
 
 import core.usuario.Usuario;
+import java.time.LocalDateTime;
 
-public class RegistroAplicacion {
+public class RegistroAplicacion extends Registro{
     
-    private float latitud, longuitud; 
+    private double latitud, longuitud; 
     private Usuario usuarioAplicacion; 
-    
-    
-    public RegistroAplicacion(){
-        
+
+    public RegistroAplicacion(Usuario usuarioAplicacion, double latitud, double longuitud, LocalDateTime fecha) {
+        super(fecha);
+        this.latitud = latitud;
+        this.longuitud = longuitud;
+        this.usuarioAplicacion = usuarioAplicacion;
     }
+    
+    
+    
 }

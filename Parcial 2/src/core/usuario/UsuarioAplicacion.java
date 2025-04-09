@@ -12,8 +12,18 @@ import core.registro.RegistroAplicacion;
  */
 
 
-public class UsuarioAplicacion {
+public class UsuarioAplicacion extends Usuario{
     private String nombre, cedula, direccion; 
     private RegistroAplicacion registroAplicacion; 
+
+    public UsuarioAplicacion(String celular, boolean covid,String nombre, String cedula,String direccion) {
+        super(cedula, covid);
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.direccion = direccion;
+        this.registroAplicacion = registroAplicacion;
+    }
+    
+    
     
 }

@@ -11,14 +11,17 @@ package core.registro;
 
 import core.Puntointeres.Antena;
 import core.usuario.*;
+import java.time.LocalDateTime;
 
 
-public class RegistroOperador {
+public class RegistroOperador extends Registro{
     private Usuario usuario;
     private Antena antena; 
     
-    public RegistroOperador(){
-        
+    public RegistroOperador(Usuario usuario, Antena antena, LocalDateTime fecha){
+        super(fecha);
+        this.antena = antena; 
+        this.usuario = usuario; 
     }
     
 }

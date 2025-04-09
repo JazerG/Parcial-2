@@ -9,6 +9,13 @@ package core.Puntointeres;
  * @author gjazer
  */
 public class Antena {
-    private float latitud;
-    private float longitud;
+    private double latitud;
+    private double longitud;
+
+    public Antena(double latitud, double longitud) {
+        this.latitud = latitud;
+        this.longitud = longitud;
+    }
+    
+    
 }

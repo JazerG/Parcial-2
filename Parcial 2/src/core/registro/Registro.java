@@ -13,4 +13,10 @@ import java.time.LocalDateTime;
 
 public class Registro {
     private LocalDateTime fecha;
+
+    public Registro(LocalDateTime fecha) {
+        this.fecha = fecha;
+    }
+    
+    
 }
